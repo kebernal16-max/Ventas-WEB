@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bernal Pro-Software | Catálogos Digitales Profesionales</title>
+    <title>Bernal Pro-Software | Catálogos Profesionales</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -23,11 +23,9 @@
     <section id="perfil-profesional">
         <div class="container">
             <div class="perfil-card">
-                <div class="perfil-info">
-                    <span class="saludo">👋 ¡Hola! Soy Kevin Bernal</span>
-                    <h2>Esta es mi página oficial</h2>
-                    <p>Soy <strong>Técnico en Programación de Software</strong> y mi objetivo es ayudarte a digitalizar tu negocio con herramientas que realmente funcionen. No vendo plantillas; diseño <strong>páginas completamente personalizadas</strong> y optimizadas.</p>
-                </div>
+                <span class="saludo">👋 ¡Hola! Soy Kevin Bernal</span>
+                <h2>Esta es mi página oficial</h2>
+                <p>Soy <strong>Técnico en Programación de Software</strong>. Diseño páginas personalizadas para que tus ventas por WhatsApp sean rápidas y profesionales.</p>
             </div>
         </div>
     </section>
@@ -36,13 +34,10 @@
         <div class="container">
             <div class="demo-wrapper">
                 <div class="demo-texto">
-                    <span class="badge-nuevo">SISTEMA INTERACTIVO</span>
-                    <h2>Mira cómo quedaría tu página</h2>
-                    <p>He diseñado un <strong>ejemplo básico</strong> para que pruebes la fluidez y el carrito de compras automático.</p>
-                    <a href="demo-moda/index.html" class="btn-ver-demo-principal">Probar Ejemplo en Vivo →</a>
-                </div>
-                <div class="demo-visual">
-                    <div class="mockup-pantalla"><span>📱 Vista Previa</span></div>
+                    <span class="badge-nuevo">INTERACTIVO</span>
+                    <h2>Prueba una tienda real</h2>
+                    <p>He preparado este ejemplo para que veas el carrito de compras en acción.</p>
+                    <a href="demo-moda/index.html" class="btn-ver-demo-principal">Probar Demo →</a>
                 </div>
             </div>
         </div>
@@ -50,7 +45,7 @@
 
     <section id="planes">
         <div class="container">
-            <h2 class="titulo-seccion">Planes de Desarrollo</h2>
+            <h2>Planes de Desarrollo</h2>
             <div class="grid-precios">
                 <div class="card-precio">
                     <h3>PLAN INICIO</h3>
@@ -68,19 +63,14 @@
 
     <div id="modalContacto" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
             <h3>¡Hola! Soy Kevin</h3>
-            <input type="text" id="nombreCliente" placeholder="Tu nombre completo">
+            <p>Escribe tu nombre para atenderte:</p>
+            <input type="text" id="nombreCliente" placeholder="Tu nombre">
             <input type="hidden" id="planElegido">
-            <button class="btn-enviar" onclick="enviarWhatsApp()">Continuar al WhatsApp ✅</button>
+            <button class="btn-comprar" onclick="enviarWhatsApp()">Ir a WhatsApp ✅</button>
+            <p onclick="cerrarModal()" style="color:red; cursor:pointer; margin-top:10px;">Cerrar</p>
         </div>
     </div>
-
-    <footer id="contacto">
-        <div class="container">
-            <p>Bernal Pro-Software | Bogotá, Colombia</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
