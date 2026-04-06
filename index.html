@@ -26,8 +26,7 @@
                 <div class="perfil-info">
                     <span class="saludo">👋 ¡Hola! Soy Kevin Bernal</span>
                     <h2>Esta es mi página oficial</h2>
-                    <p>Soy <strong>Técnico en Programación de Software</strong> y mi objetivo es ayudarte a digitalizar tu negocio con herramientas que realmente funcionen. No vendo plantillas; diseño <strong>páginas completamente personalizadas</strong> y optimizadas para que tus ventas por WhatsApp sean rápidas, ordenadas y profesionales.</p>
-                    <p class="p-destacado">Solicita tu página hoy y lleva tu comercio al siguiente nivel con soporte técnico real.</p>
+                    <p>Soy <strong>Técnico en Programación de Software</strong> y mi objetivo es ayudarte a digitalizar tu negocio con herramientas que realmente funcionen. No vendo plantillas; diseño <strong>páginas completamente personalizadas</strong> y optimizadas.</p>
                 </div>
             </div>
         </div>
@@ -39,48 +38,11 @@
                 <div class="demo-texto">
                     <span class="badge-nuevo">SISTEMA INTERACTIVO</span>
                     <h2>Mira cómo quedaría tu página</h2>
-                    <p>He diseñado un <strong>ejemplo básico</strong> para que pruebes la fluidez, el carrito de compras automático y la facilidad con la que tus clientes podrán pedirte productos.</p>
-                    <ul class="puntos-clave">
-                        <li>🔹 Navegación ultra-rápida</li>
-                        <li>🔹 Carrito que suma el total solo</li>
-                        <li>🔹 Botones de WhatsApp configurados</li>
-                    </ul>
+                    <p>He diseñado un <strong>ejemplo básico</strong> para que pruebes la fluidez y el carrito de compras automático.</p>
                     <a href="demo-moda/index.html" class="btn-ver-demo-principal">Probar Ejemplo en Vivo →</a>
                 </div>
                 <div class="demo-visual">
-                    <div class="mockup-pantalla">
-                        <span>📱 Vista Previa</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="lanzamiento-aviso">
-        <div class="container">
-            <div class="banner-urgencia">
-                <span class="reloj">⏳</span> <strong>OFERTA DE LANZAMIENTO:</strong> Precios válidos únicamente hasta el <strong>30 de abril de 2026</strong>.
-            </div>
-        </div>
-    </section>
-
-    <section id="ventajas">
-        <div class="container">
-            <div class="grid-ventajas">
-                <div class="v-card">
-                    <span class="v-icon">🚫</span>
-                    <h3>0% Publicidad</h3>
-                    <p>Tu catálogo será exclusivo de tu marca. Sin anuncios molestos que distraigan a tus clientes.</p>
-                </div>
-                <div class="v-card">
-                    <span class="v-icon">⚡</span>
-                    <h3>Máxima Fluidez</h3>
-                    <p>Código optimizado para una carga instantánea. El cliente compra sin esperas.</p>
-                </div>
-                <div class="v-card">
-                    <span class="v-icon">🛠️</span>
-                    <h3>Soporte Técnico</h3>
-                    <p>Como programador, garantizo que tu página siempre estará activa y segura.</p>
+                    <div class="mockup-pantalla"><span>📱 Vista Previa</span></div>
                 </div>
             </div>
         </div>
@@ -90,41 +52,16 @@
         <div class="container">
             <h2 class="titulo-seccion">Planes de Desarrollo</h2>
             <div class="grid-precios">
-                
                 <div class="card-precio">
                     <h3>PLAN INICIO</h3>
-                    <p class="sub-titulo">Esencial para emprendedores</p>
                     <div class="monto">$299.000</div>
-                    <p class="pago-unico">Pago único inicial</p>
-                    <hr>
-                    <ul class="check-list">
-                        <li>✅ Hasta 15 productos destacados</li>
-                        <li>✅ Pedidos directos a tu WhatsApp</li>
-                        <li>✅ Diseño optimizado para celulares</li>
-                        <li>✅ <b>Sin publicidad de terceros</b></li>
-                    </ul>
-                    <div class="mantenimiento">Mantenimiento: $30.000/mes</div>
                     <button class="btn-comprar" onclick="abrirModal('PLAN INICIO')">Solicitar este Plan</button>
                 </div>
-
                 <div class="card-precio destacado">
-                    <div class="tag-pro">EL MÁS VENDIDO</div>
                     <h3>PLAN EMPRESARIAL</h3>
-                    <p class="sub-titulo">La tienda digital completa</p>
                     <div class="monto">$499.000</div>
-                    <p class="pago-unico">Pago único inicial</p>
-                    <hr>
-                    <ul class="check-list">
-                        <li>✅ <b>Productos Ilimitados</b></li>
-                        <li>✅ <b>Carrito de Compras Automático</b></li>
-                        <li>✅ Suma el total de la venta solo</li>
-                        <li>✅ Selección de tallas y colores</li>
-                        <li>✅ <b>Fluidez Pro sin publicidad</b></li>
-                    </ul>
-                    <div class="mantenimiento">Mantenimiento: $50.000/mes</div>
                     <button class="btn-comprar" onclick="abrirModal('PLAN EMPRESARIAL')">Solicitar este Plan</button>
                 </div>
-
             </div>
         </div>
     </section>
@@ -132,32 +69,16 @@
     <div id="modalContacto" class="modal">
         <div class="modal-content">
             <span class="close" onclick="cerrarModal()">&times;</span>
-            <div class="modal-header">
-                <h3>¡Hola! Soy Kevin</h3>
-                <p>Dime tu nombre para atenderte personalmente:</p>
-            </div>
-            <input type="text" id="nombreCliente" placeholder="Tu nombre completo" required>
+            <h3>¡Hola! Soy Kevin</h3>
+            <input type="text" id="nombreCliente" placeholder="Tu nombre completo">
             <input type="hidden" id="planElegido">
             <button class="btn-enviar" onclick="enviarWhatsApp()">Continuar al WhatsApp ✅</button>
         </div>
     </div>
 
-    <section id="fotos">
-        <div class="container">
-            <div class="foto-box">
-                <h2>📸 ¿No tienes fotos de calidad?</h2>
-                <p>Si no tienes imágenes, yo voy a tu negocio y me encargo de todo.</p>
-                <div class="precio-foto">Servicio VIP: <strong>$60.000</strong></div>
-                <p class="nota-foto">*Si ya cuentas con tus fotos, este valor no aplica.</p>
-            </div>
-        </div>
-    </section>
-
     <footer id="contacto">
         <div class="container">
-            <h2>¿Damos el siguiente paso?</h2>
             <p>Bernal Pro-Software | Bogotá, Colombia</p>
-            <p class="copy">© 2026 Kevin Bernal - Todos los derechos reservados</p>
         </div>
     </footer>
 
