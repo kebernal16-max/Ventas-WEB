@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card-precio, .v-card, .perfil-card').forEach(el => {
+    // Agregué '.demo-wrapper' a la lista para que también se anime
+    document.querySelectorAll('.card-precio, .v-card, .perfil-card, .demo-wrapper').forEach(el => {
         el.style.opacity = "0";
         el.style.transform = "translateY(20px)";
         el.style.transition = "all 0.6s ease-out";
