@@ -1,0 +1,9 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0a0a0a; color: white; margin: 0; text-align: center; }
+header { padding: 80px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover; border-bottom: 3px solid #00ffcc; }
+h1 { color: #00ffcc; font-size: 2.5rem; text-shadow: 0 0 10px rgba(0,255,204,0.5); }
+#servicios { display: flex; flex-wrap: wrap; justify-content: center; padding: 50px 20px; gap: 20px; }
+.card { background: #161616; padding: 30px; border-radius: 20px; width: 280px; border: 1px solid #333; transition: 0.3s; }
+.card:hover { border-color: #00ffcc; transform: translateY(-10px); }
+.card h2 { color: #00ffcc; margin-bottom: 15px; }
+.btn-ws { display: inline-block; background: #25D366; color: white; padding: 20px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.2rem; margin-top: 30px; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
+#contacto { padding: 80px 20px; background: #111; }
