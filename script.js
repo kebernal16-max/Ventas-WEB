@@ -1,33 +1,20 @@
-// Esperar a que el DOM esté cargado
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. EFECTO DE APARICIÓN (REVEAL) AL BAJAR
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+    // Animación al bajar (Reveal)
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = "1";
                 entry.target.style.transform = "translateY(0)";
-                observer.unobserve(entry.target); // Solo se anima una vez
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1 });
 
-    // Seleccionamos los elementos que queremos animar
-    const elementsToAnimate = document.querySelectorAll('.card-precio, .perfil-box, .faq-item');
-    
-    elementsToAnimate.forEach(el => {
+    document.querySelectorAll('.card-precio, .info-bloque, .faq-item').forEach(el => {
         el.style.opacity = "0";
         el.style.transform = "translateY(30px)";
-        el.style.transition = "all 0.8s ease-out";
-        revealOnScroll.observe(el);
+        el.style.transition = "all 0.6s ease-out";
+        observer.observe(el);
     });
 
-    // 2. LOGO EN CONSOLA (Detalle de Programador Pro)
-    console.log("%c Bernal Pro-Software ", "background: #0072ff; color: white; font-size: 20px; font-weight: bold; border-radius: 5px; padding: 5px;");
-    console.log("Desarrollado por Kevin Bernal - Técnico en Programación.");
-
+    console.log("%c Bernal Pro-Software Activado ", "background: #0072ff; color: white; padding: 5px; border-radius: 5px;");
 });
