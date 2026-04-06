@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Las cosas aparecen suavemente al bajar la página
+    // Efecto de aparición suave
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card-precio, .foto-box, .info-bloque').forEach(el => {
+    document.querySelectorAll('.card-precio, .foto-box, .info-bloque, .v-card').forEach(el => {
         el.style.opacity = "0";
         el.style.transform = "translateY(20px)";
         el.style.transition = "all 0.6s ease-out";
         observer.observe(el);
     });
 
-    console.log("Bernal Pro-Software listo para vender.");
+    console.log("Bernal Pro-Software: Sistema sin publicidad activado.");
 });
