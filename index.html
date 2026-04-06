@@ -1,76 +1,137 @@
-<section id="planes">
-    <div class="container">
-        <h2 class="titulo-seccion">Planes de Inversión</h2>
-        <div class="grid-precios">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernal Pro-Software | Catálogos Digitales de Alta Gama</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">BERNAL <span>PRO-SOFTWARE</span></h1>
+            <p class="tagline">Ingeniería Web para Potenciar tus Ventas por WhatsApp</p>
+            <div class="hero-btns">
+                <a href="#planes" class="btn-primary">Ver Planes</a>
+                <a href="#sobre-mi" class="btn-secondary">Perfil Técnico</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi">
+        <div class="container">
+            <div class="perfil-box">
+                <span class="badge-tecnico">GARANTÍA TÉCNICA</span>
+                <h2>Respaldo Profesional</h2>
+                <p>Soy <strong>Kevin Bernal</strong>, Técnico en Programación de Software. Mi formación técnica me permite desarrollar soluciones digitales personalizadas desde el código, garantizando estructuras rápidas, seguras y optimizadas para el mercado actual.</p>
+                <p class="p-destacado">No uso plantillas genéricas; construyo software que funciona para tu negocio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes">
+        <div class="container">
+            <h2 class="titulo-seccion">Planes de Inversión</h2>
+            <div class="grid-precios">
+                
+                <div class="card-precio">
+                    <h3>PLAN INICIO</h3>
+                    <div class="monto">$250.000</div>
+                    <p class="pago-unico">Pago único inicial</p>
+                    <hr>
+                    <ul class="check-list">
+                        <li>✅ Hasta 15 productos</li>
+                        <li>✅ Botón WhatsApp Directo</li>
+                        <li>✅ Hosting Incluido</li>
+                    </ul>
+                    <div class="mantenimiento">Mantenimiento: $30.000/mes</div>
+                    <a href="#detalle-inicio" class="btn-info">Ver cómo funciona ↓</a>
+                </div>
+
+                <div class="card-precio destacado">
+                    <div class="tag-pro">RECOMENDADO</div>
+                    <h3>PLAN EMPRESARIAL</h3>
+                    <div class="monto">$450.000</div>
+                    <p class="pago-unico">Pago único inicial</p>
+                    <hr>
+                    <ul class="check-list">
+                        <li>✅ Productos Ilimitados</li>
+                        <li>✅ Carrito con Memoria</li>
+                        <li>✅ Galería de Fotos Pro</li>
+                    </ul>
+                    <div class="mantenimiento">Mantenimiento: $50.000/mes</div>
+                    <a href="#detalle-pro" class="btn-info">Ver cómo funciona ↓</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="detalles-tecnicos">
+        <div class="container">
+            <h2 class="titulo-seccion">Funcionamiento Detallado</h2>
             
-            <div class="card-precio">
-                <h3>PLAN INICIO</h3>
-                <div class="monto">$250.000</div>
-                <p class="pago-unico">Pago único inicial</p>
-                <hr>
-                <ul class="check-list">
-                    <li>✅ Hasta 15 productos</li>
-                    <li>✅ Botón WhatsApp Directo</li>
-                    <li>✅ Hosting Incluido</li>
-                </ul>
-                <div class="mantenimiento">Mantenimiento: $30.000/mes</div>
-                <a href="#detalle-inicio" class="btn-info">¿Cómo funciona este plan?</a>
+            <div id="detalle-inicio" class="info-bloque">
+                <div class="info-header">
+                    <span class="numero">01</span>
+                    <h3>Detalles Plan Inicio</h3>
+                </div>
+                <div class="info-cuerpo">
+                    <p>Diseñado para emprendedores que necesitan una vitrina rápida y efectiva:</p>
+                    <ul>
+                        <li><strong>Montaje Inicial:</strong> Configuración manual de hasta 15 productos con sus especificaciones.</li>
+                        <li><strong>El Pedido:</strong> Al elegir un producto, se abre WhatsApp con un mensaje automático indicando el interés del cliente.</li>
+                        <li><strong>Mantenimiento:</strong> Incluye actualización de precios y cambio de hasta 2 fotos mensuales para mantener tu catálogo vigente.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="card-precio destacado">
-                <div class="tag-pro">RECOMENDADO</div>
-                <h3>PLAN EMPRESARIAL</h3>
-                <div class="monto">$450.000</div>
-                <p class="pago-unico">Pago único inicial</p>
-                <hr>
-                <ul class="check-list">
-                    <li>✅ Productos Ilimitados</li>
-                    <li>✅ Carrito con Memoria</li>
-                    <li>✅ Galería de Fotos Pro</li>
-                </ul>
-                <div class="mantenimiento">Mantenimiento: $50.000/mes</div>
-                <a href="#detalle-pro" class="btn-info">¿Cómo funciona este plan?</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section id="detalles-tecnicos">
-    <div class="container">
-        <h2 class="titulo-seccion">Funcionamiento Detallado</h2>
-        
-        <div id="detalle-inicio" class="info-bloque">
-            <div class="info-header">
-                <span class="numero">01</span>
-                <h3>Detalles Plan Inicio</h3>
-            </div>
-            <div class="info-cuerpo">
-                <p>Este plan está diseñado para emprendedores que están iniciando. El proceso es sencillo:</p>
-                <ul>
-                    <li><strong>Montaje Inicial:</strong> Yo configuro tu catálogo con tus primeros 15 productos (fotos, nombres y precios).</li>
-                    <li><strong>El Pedido:</strong> Cuando el cliente da clic en un producto, se abre su WhatsApp con un mensaje pre-cargado que dice: <em>"Hola, me interesa este producto: [Nombre del producto]"</em>.</li>
-                    <li><strong>Mantenimiento:</strong> Por solo $30.000 al mes, tienes derecho a que yo cambie precios o actualice hasta 2 fotos si tu inventario rota.</li>
-                </ul>
+            <div id="detalle-pro" class="info-bloque">
+                <div class="info-header">
+                    <span class="numero">02</span>
+                    <h3>Detalles Plan Empresarial</h3>
+                </div>
+                <div class="info-cuerpo">
+                    <p>Solución de ingeniería avanzada para negocios con alto volumen de pedidos:</p>
+                    <ul>
+                        <li><strong>Carrito Inteligente:</strong> El cliente suma múltiples productos y la página calcula el total automáticamente.</li>
+                        <li><strong>Tecnología LocalStorage:</strong> El pedido no se borra si el cliente cierra la pestaña por error.</li>
+                        <li><strong>Mensaje Estructurado:</strong> Recibes un pedido tipo factura: <br> 
+                            <code>PEDIDO NUEVO: <br> 2 Chaquetas Premium (Azul) <br> 1 Jean Slim Fit <br> TOTAL: $350.000</code>
+                        </li>
+                        <li><strong>Gestión de Inventario:</strong> Actualizaciones ilimitadas de productos durante el mes.</li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div id="detalle-pro" class="info-bloque">
-            <div class="info-header">
-                <span class="numero">02</span>
-                <h3>Detalles Plan Empresarial</h3>
-            </div>
-            <div class="info-cuerpo">
-                <p>Es la solución completa de ingeniería web para negocios con alto flujo:</p>
-                <ul>
-                    <li><strong>Sistema de Carrito:</strong> A diferencia del básico, aquí el cliente puede elegir 5, 10 o más artículos. La página suma el total automáticamente.</li>
-                    <li><strong>Tecnología de Memoria:</strong> Uso <em>LocalStorage</em> en el código para que si el cliente se queda sin internet o cierra la pestaña, su carrito siga lleno al volver.</li>
-                    <li><strong>El Pedido Pro:</strong> Te llega un mensaje estructurado: <br> 
-                        <code>ORDEN DE PEDIDO: <br> 2 Chaquetas M (Azul) <br> 1 Jean Talla 32 <br> TOTAL: $350.000</code>
-                    </li>
-                    <li><strong>Mantenimiento Full:</strong> Por $50.000 al mes, me encargo de subir todos los productos nuevos que necesites sin límite.</li>
-                </ul>
+    <section id="faq">
+        <div class="container">
+            <h2 class="titulo-seccion">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>¿Tengo que pagar arriendo mensual?</h4>
+                    <p>No. El hosting es gratuito. El pago mensual es por soporte técnico y actualizaciones de catálogo.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>¿Puedo cambiar las fotos yo mismo?</h4>
+                    <p>Para asegurar que la página mantenga su velocidad y diseño profesional, yo realizo los cambios técnicos como parte del mantenimiento.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>¿Hablamos de tu próximo proyecto?</h3>
+            <a href="https://wa.me/573104411255?text=Hola%20Kevin,%20vengo%20de%20tu%20web%20Bernal%20Pro-Software" class="btn-ws">WhatsApp de Bernal Pro-Software ✅</a>
+            <p class="copy">© 2026 Bernal Pro-Software | Bogotá, Colombia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
