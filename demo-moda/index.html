@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Moda | Bernal Pro-Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="demo-top-bar">
+        ⚠️ <strong>PÁGINA DEMO:</strong> Ejemplo básico de funcionalidad. El desarrollo final es 100% personalizado.
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo-demo">BERNAL <span>STORE</span></h1>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="grid-productos" id="productos-lista">
+            </div>
+    </main>
+
+    <div id="modal-producto" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarDetalle()">&times;</span>
+            <div class="detalle-grid">
+                <div class="detalle-img-container">
+                    <img id="detalle-img" src="" alt="Producto">
+                </div>
+                <div class="detalle-info">
+                    <h2 id="detalle-nombre"></h2>
+                    <p id="detalle-desc" class="descripcion"></p>
+                    <p class="detalle-precio" id="detalle-precio"></p>
+                    <button class="btn-add-modal" id="btn-agregar-modal">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Pedido</h3>
+            <span class="close-cart" onclick="toggleCart()">&times;</span>
+        </div>
+        <div id="cart-items">
+            </div>
+        <div class="cart-footer">
+            <div class="total-box">
+                <span>Total:</span>
+                <span id="cart-total">$0</span>
+            </div>
+            <button class="btn-whatsapp" onclick="finalizarPedido()">Enviar Pedido a WhatsApp ✅</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
